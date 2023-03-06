@@ -9,11 +9,12 @@ namespace Snake_And_Ladder
     public class Snake_Ladder
     {
         const int NO_PLAY = 0, LADDER = 1, SNAKE = 2,WINNING_POSITION=100;
-        int Player_Position = 0;
+        int Player_Position = 0, count = 0;
         Random random = new Random();
         public int Dice_Role()
         {
             int Die = random.Next(1, 7);
+            count++;
             Console.WriteLine("die role ---->" + Die);
             return Die;
         }
@@ -41,6 +42,7 @@ namespace Snake_And_Ladder
             }
             if (this.Player_Position == WINNING_POSITION)
             Console.WriteLine("player position -------> " + Player_Position);
+            Console.WriteLine("die count -----> " + count);
         }
     }
 }
