@@ -6,7 +6,7 @@ namespace Snake_And_Ladder
     {
         static void Main(string[] args)
         {
-
+            Snake_Ladder sl = new Snake_Ladder();
         }
     }
 }
