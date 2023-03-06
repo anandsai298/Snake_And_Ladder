@@ -39,6 +39,7 @@ namespace Snake_And_Ladder
                 }
                 Console.WriteLine("player position -------> " + Player_Position);
             }
+            if (this.Player_Position == WINNING_POSITION)
             Console.WriteLine("player position -------> " + Player_Position);
         }
     }
